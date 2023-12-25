@@ -20,6 +20,8 @@ void main()
 {
 	Cow betsy;
 	betsy.mooCount = 0;		// initialize value for garbage issues
+	makeCowMoo(betsy);
+	cout << betsy.mooCount << endl;
 }
 
 
