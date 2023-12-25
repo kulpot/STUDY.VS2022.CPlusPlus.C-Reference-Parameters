@@ -6,7 +6,15 @@ using std::endl;
 // ------------------------------------------- C++ Reference Parameters ---------------------------------------------
 // ref link:https://www.youtube.com/watch?v=DF3EwjEG-mI&list=PLRwVmtr-pp05AW78n3IkMJ3M1dlQ-wgv1&index=8
 
+struct Cow
+{
+	int mooCount;
+};
 
+void main()
+{
+	Cow betsy;
+}
 
 
 
