@@ -3,6 +3,36 @@
 using std::cout;
 using std::endl;
 
+// ------------------------------------------- C++ Reference Parameters ---------------------------------------------
+// ref link:https://www.youtube.com/watch?v=DF3EwjEG-mI&list=PLRwVmtr-pp05AW78n3IkMJ3M1dlQ-wgv1&index=8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ---------------------------------------- C++ References ------------------------------------------------
 // ref link:https://www.youtube.com/watch?v=J3T-8N9QK2A&list=PLRwVmtr-pp05AW78n3IkMJ3M1dlQ-wgv1&index=7
 
@@ -35,32 +65,32 @@ cout << b << endl;
 b will still be its original value, and a's value will change. You can also print the address of the variables. After assigning b to r, print b's address, r's address, and a's address. You will see that r and a still share the same address.
 
 */
-struct Cow
-{
-	int mooCount;
-};
-
-void main()
-{			// REASON to use a references are somekind of solution for biglooooooooonUgggggglyVariableNaaaammmmmeeee
-	Cow biglooooooooonUgggggglyVariableNaaaammmmmeeee;
-	biglooooooooonUgggggglyVariableNaaaammmmmeeee.mooCount = 999;
-	Cow& d = biglooooooooonUgggggglyVariableNaaaammmmmeeee;			// d - runtime construct
-	d.mooCount = 99;
-	cout << biglooooooooonUgggggglyVariableNaaaammmmmeeee.mooCount << endl;
-
-	Cow betsy;
-	betsy.mooCount = 999;
-	Cow& c = betsy;			// c - runtime construct
-	c.mooCount = 13;
-	cout << betsy.mooCount << endl;
-	//cout << (*betsy).mooCount << endl; // pointers
-
-	//int i = 51;
-	//int& j = i;			// j is references the i , set in constant
-	////= i;
-	//j = 71;
-	//cout << i << endl;
-}
+//struct Cow
+//{
+//	int mooCount;
+//};
+//
+//void main()
+//{			// REASON to use a references are somekind of solution for biglooooooooonUgggggglyVariableNaaaammmmmeeee
+//	Cow biglooooooooonUgggggglyVariableNaaaammmmmeeee;
+//	biglooooooooonUgggggglyVariableNaaaammmmmeeee.mooCount = 999;
+//	Cow& d = biglooooooooonUgggggglyVariableNaaaammmmmeeee;			// d - runtime construct
+//	d.mooCount = 99;
+//	cout << biglooooooooonUgggggglyVariableNaaaammmmmeeee.mooCount << endl;
+//
+//	Cow betsy;
+//	betsy.mooCount = 999;
+//	Cow& c = betsy;			// c - runtime construct
+//	c.mooCount = 13;
+//	cout << betsy.mooCount << endl;
+//	//cout << (*betsy).mooCount << endl; // pointers
+//
+//	//int i = 51;
+//	//int& j = i;			// j is references the i , set in constant
+//	////= i;
+//	//j = 71;
+//	//cout << i << endl;
+//}
 
 
 
