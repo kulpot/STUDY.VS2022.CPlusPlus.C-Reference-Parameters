@@ -9,18 +9,38 @@ using std::endl;
 struct Cow
 {
 	int mooCount;
+	int mooCount1;
+	int mooCount2;
+	int mooCount3;
+	int mooCount4;
+	int mooCount5;
+	int mooCount6;
+	int mooCount7;
+	int mooCount8;
+	int mooCount9;
+	int mooCount10;
+
 };
 
-void makeCowMoo(Cow cow)
+// Cow cow = betsy;
+//void makeCowMoo(Cow cow)		// output: 0
+
+// Cow& cow = betsy;
+//void makeCowMoo(Cow& cow)		// output: 1
+void printNumMoos(const Cow& cow)	// const protected from modifying this parameter
+//void printNumMoos(Cow cow)		
+//void printNumMoos(Cow& cow)		// Cow& for the big ugly copy
 {
-	cow.mooCount++;
+	//cow.mooCount++;
+	cout << cow.mooCount << endl;
 }
 
 void main()
 {
 	Cow betsy;
 	betsy.mooCount = 0;		// initialize value for garbage issues
-	makeCowMoo(betsy);
+	//makeCowMoo(betsy);
+	printNumMoos(betsy);
 	cout << betsy.mooCount << endl;
 }
 
