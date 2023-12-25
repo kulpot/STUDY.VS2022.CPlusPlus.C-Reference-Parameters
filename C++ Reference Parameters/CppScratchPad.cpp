@@ -11,9 +11,15 @@ struct Cow
 	int mooCount;
 };
 
+void makeCowMoo(Cow cow)
+{
+	cow.mooCount++;
+}
+
 void main()
 {
 	Cow betsy;
+	betsy.mooCount = 0;		// initialize value for garbage issues
 }
 
 
